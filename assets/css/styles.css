@@ -146,18 +146,18 @@ body.scale-cv{
 }
 
 .scale-cv .education_container,
-.scale-cv .experience_container,
+.scale-cv .achievements_container,
 .scale-cv .certificate_container{
   gap: 0;
 }
 
 .scale-cv .education_time,
-.scale-cv .experience_time{
+.scale-cv .achievements_time{
   padding-right: 1rem;
 }
 
 .scale-cv .education_rounder,
-.scale-cv .experience_rounder{
+.scale-cv .achievements_rounder{
   width: 11px;
   height: 11px;
   margin-top: .2rem;
@@ -174,14 +174,14 @@ body.scale-cv{
   font-size: 12px;
 }
 
-.scale-cv .experience_line{
+.scale-cv .achievements_line{
   width: 1px;
   height: 130px;
   transform: translate(5px, 0);
 }
 
 .scale-cv .education_data,
-.scale-cv .experience_data{
+.scale-cv .achievements_data{
   gap: .20rem;
   font-size: 12px;
 }
@@ -430,19 +430,19 @@ img {
 .profile_description{
   text-align: center;
 }
-/* EDUCATION AND EXPERIENCE */
+/* EDUCATION AND achievements */
 .education_content,
-.experience_content{
+.achievements_content{
   display: flex;
 }
 
 .education_time,
-.experience_time{
+.achievements_time{
   padding-right: .5rem;
 }
 
 .education_rounder,
-.experience_rounder{
+.achievements_rounder{
   position: relative;
   display: block;
   width: 16px;
@@ -453,7 +453,7 @@ img {
 }
 
 .education_line,
-.experience_line{
+.achievements_line{
   display: block;
   width: 2px;
   height: 200%;
@@ -462,17 +462,17 @@ img {
 }
 
 .education_data,
-.experience_data{
+.achievements_data{
   gap: 1rem;
 }
 
 .education_title,
-.experience_title{
+.achievements_title{
   font-size: var(--h3-font-size);
 }
 
 .education_studies,
-.experience_company{
+.achievements_company{
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
