@@ -1,11 +1,9 @@
-/* GOOGLE FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* VARIABLES CSS */
 :root {
   --header-height: 3rem;
 
-  /* Colors */
   --title-color: #0b0a0a;
   --text-color: #403a3a;
   --text-color-light: #707070;
@@ -13,7 +11,6 @@
   --container-color-alt: #f0efef;
   --body-color: #fcfcfc;
 
-  /* Font and typography */
   --body-font: 'Poppins', sans-serif;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -22,21 +19,17 @@
   --small-font-size: 0.875rem;
   --smaller-font-size: 0.813rem;
 
-  /* Font weight */
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /* Margins */
   --mb-1: 0.5rem;
   --mb-2: 1rem;
   --mb-3: 1.5rem;
 
-  /* z index */
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/* BASE */
 *,
 ::before,
 ::after {
@@ -47,7 +40,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Variables Dark theme */
 body.dark-theme{
   --title-color: #F2F2F2;
   --text-color: #BFBFBF;
@@ -57,7 +49,6 @@ body.dark-theme{
 }
 
 
-/* Button Dark/Light */
 .change-theme{
   position: absolute;
   right: 0;
@@ -71,7 +62,6 @@ body.dark-theme{
 .change-theme:hover{
   color: var(--text-color);
 }
-/* Font size variables to scale cv */
 body.scale-cv{
   --h1-font-size: .938rem;
   --h2-font-size: .938rem;
@@ -80,7 +70,6 @@ body.scale-cv{
   --small-font-size: 0.75rem;
   --smaller-font-size: 0.688rem;
 }
-/* Generate PDF button */
 .generate-pdf{
   display: none;
   position: absolute;
@@ -94,7 +83,6 @@ body.scale-cv{
 .generate-pdf:hover{
   color: var(--title-color);
 }
-/* Classes modified to reduce size and print on A4 sheet */
 .scale-cv .change-theme,
 .scale-cv .generate-pdf{
   display: none;
@@ -274,7 +262,6 @@ img {
   transition: 0.3s;
 }
 
-/* NAV */
 .nav {
   height: var(--header-height);
   display: flex;
@@ -333,17 +320,14 @@ img {
   margin-bottom: var(--mb-1);
 }
 
-/* Show menu */
 .show-menu{
   bottom: var(--header-height);
 }
 
-/* Active menu link */
 .active-link{
   color: var(--title-color);
 }
 }
-/* HOME */
 .home{
   position: relative;
 }
@@ -405,7 +389,6 @@ img {
   color: var(--container-color);
 }
 
-/* SOCIAL */
 .social_container{
   grid-template-columns: max-content;
   gap: 1rem;
@@ -430,7 +413,6 @@ img {
 .profile_description{
   text-align: center;
 }
-/* EDUCATION AND achievements */
 .education_content,
 .achievements_content{
   display: flex;
@@ -480,7 +462,6 @@ img {
 .education_year{
   font-size: var(--smaller-font-size);
 }
-/* SKILLS AND LANGUAGES */
 .skills_content,
 .languages_content{
   grid-template-columns: repeat(2, 1fr);
@@ -506,12 +487,10 @@ img {
   border-radius: 50%;
   margin-right: .75rem;
 }
-/* CERTIFICATES */
 .certificate_title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
-/* REFERENCES */
 .references_content{
   gap: .25rem;
 }
@@ -524,7 +503,7 @@ img {
 .references_contact{
   font-size: var(--smaller-font-size);
 }
-/* INTERESTS */
+
 .interests_container{
   grid-template-columns: repeat(3, 1fr);
   margin-top: var(--mb-2);
@@ -541,7 +520,7 @@ img {
   color: var(--text-color-light);
   margin-bottom: .25rem;
 }
-/* Scroll top */
+
 .scrolltop{
   position: fixed;
   right: 1rem;
@@ -554,7 +533,6 @@ img {
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
-  /* visibility: hidden; */
 }
 
 .scrolltop_icon{
@@ -566,8 +544,7 @@ img {
   visibility: visible;
   bottom: 5rem;
 }
-/*========== MEDIA QUERIES ==========*/
-/* For small devices, menu two columns */
+
 @media screen and (max-width: 320px){
   .nav_list{
     grid-template-columns: repeat(2, 1fr);
@@ -576,7 +553,6 @@ img {
 }
 
 
-/* Classes modified for large screen size */
 @media screen and (min-width: 968px){
   body{
     margin: 3rem 0;
